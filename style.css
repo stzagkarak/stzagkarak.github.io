@@ -1,0 +1,129 @@
+
+html body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.static-container {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.tcard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.tcard-left {
+    max-width: 800px;
+}
+
+@media screen and (max-width: 1190px) {
+    .tcard {
+        flex-wrap: wrap-reverse;
+    }
+    
+    .tcard-left {
+        max-width: unset;
+    }
+}
+
+.tcard-right {
+    width: 100%;
+    height: 100%;
+}
+
+
+.right-align-text {
+    text-align: right;
+}
+
+.p-in::first-letter {
+    padding-left: .5vw;
+}
+
+.img-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.info-container * {
+    font-weight: 400;
+}
+
+.info-instance-container {
+    min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1190px) {
+    .info-container {
+        column-gap: 40px;
+    }
+}
+
+.section-header {
+    display: block;
+    width: 100%;
+    box-shadow:  0px 1px;
+}
+
+.clist-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.clist-entry {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 0;
+}
+
+.clist-entry-p {
+    font-weight: 300; 
+    font-size: large; 
+    letter-spacing: 0.5px; 
+    line-height: 155%;
+    margin-block: 0;
+    align-self: start;
+}
+
+.clist-entry:first-of-type {
+    margin-top: 20px;
+}
+
+.clist-entry-i {
+    align-self: start;
+    width: 15px;
+    margin-top: 7px;
+}
+
+.clist-subentry {
+    margin-left: 25px;
+}
+

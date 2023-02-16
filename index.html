@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stzagkarak - Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet"> 
+
+    <script>
+        function showEInfo(showInfo, button, pelem) {
+
+            ftext = "" + showInfo[0] + "@" + showInfo.slice(1).join(".")
+            
+            document.getElementById(pelem).innerText = ftext;
+            document.getElementById(pelem).style.textAlign = "right";
+            document.getElementById(pelem).style.justifySelf = "flex-end";
+            button.remove()
+        }
+        function showPInfo(showInfo, button, pelem) {
+
+            ftext = showInfo.join(" ")
+            
+            document.getElementById(pelem).innerText = ftext;
+            document.getElementById(pelem).style.textAlign = "right";
+            document.getElementById(pelem).style.justifySelf = "flex-end";
+            button.remove()
+        }
+    </script>
+</head>
+<body>
+    <!-- set max content width -->
+    <div class="static-container">
+        
+        <div class="tcard" style="margin-top: 30px; margin-bottom: 30px;">
+            <div class="tcard-left">
+                <h1 style="font-weight: 500; font-size: xxx-large; letter-spacing: 0.7px;">Spiridon Tzagkarakis<span style="font-size: x-large;">, 23</span></h1>
+                <h3 style="font-weight: 300; font-size: x-large; letter-spacing: 0.7px;" class="right-align-text">Aspiring DevOps Enginner, Backend Developer</h3>
+                <p style="font-weight: 300; font-size: large; letter-spacing: 0.5px; line-height: 155%;" class="p-in"> Final year undergraduate CS student with first-hand experience on most aspects of web development. Undergraduate Intern on the Human Computer Interaction Lab - ICS-FORTH. Mainly focused and experienced with backend development and development automation. </p>
+                <h4 style="font-weight: 300; font-size: medium; letter-spacing: 0.3px;" class="p-in">Known as: stzagkarak, tzagkaris, csd4279</h4>
+            </div>
+            <div class="tcard-right">
+                <div class="img-holder">
+                    <img src="/public/assets/images/temp.jpg" alt="my profile pic, the mark of envy from overlord (anime)">
+                </div>
+            </div>
+        </div>
+
+        <!-- Hold n number of info tabs -->
+        <div class="info-container">
+            
+            <div class="info-instance-container">
+                <img src="/public/assets/images/envelope-fill.svg" alt="email icon" style="width: 25px; padding-right: 10px;">
+                <p id="smail-1" style="min-width: 260px; letter-spacing: 0.3px;">* * * *</p>
+                <button onclick="showEInfo(['stzagakrak', 'ics', 'forth', 'gr'], this, 'smail-1')" style="height: 30px; width: 55px; align-self: center; border:none; font-family: 'Open Sans'; border-radius: 5px; background-color: #D9D9D9; color: black;">Reveal</button>
+            </div>
+            <div class="info-instance-container">
+                <img src="/public/assets/images/envelope-fill.svg" alt="email icon" style="width: 25px; padding-right: 10px;">
+                <p id="smail-2" style="min-width: 260px; letter-spacing: 0.3px;">* * * *</p>
+                <button onclick="showEInfo(['stzagakrak', 'gmail','com'], this, 'smail-2')" style="height: 30px; width: 55px; align-self: center; border:none; font-family: 'Open Sans'; border-radius: 5px; background-color: #D9D9D9; color: black;">Reveal</button>
+            </div>
+            <div class="info-instance-container">
+                <img src="/public/assets/images/envelope-fill.svg" alt="email icon" style="width: 25px; padding-right: 10px;">
+                <p id="smail-3" style="min-width: 260px; letter-spacing: 0.3px;">* * * *</p>
+                <button onclick="showEInfo(['csd4279', 'csd', 'uoc', 'gr'], this, 'smail-3')" style="height: 30px; width: 55px; align-self: center; border:none; font-family: 'Open Sans'; border-radius: 5px; background-color: #D9D9D9; color: black;">Reveal</button>
+            </div>
+            <div class="info-instance-container">
+                <img src="/public/assets/images/geo-alt-fill.svg" alt="email icon" style="width: 25px; padding-right: 10px;">
+                <p style="min-width: 300px; letter-spacing: 0.3px; text-align: end;">Estauromenos, Heraklion, 71410</p>
+            </div>
+            <div class="info-instance-container">
+                <img src="/public/assets/images/telephone-fill.svg" alt="email icon" style="width: 25px; padding-right: 10px;">
+                <p id="sphone-1" style="min-width: 260px; letter-spacing: 0.3px;">* * * *</p>
+                <button onclick="showPInfo(['+30', '698', '803', '7929'], this, 'sphone-1')" style="height: 30px; width: 55px; align-self: center; border:none; font-family: 'Open Sans'; border-radius: 5px; background-color: #D9D9D9; color: black;">Reveal</button>
+            </div>
+            <div class="info-instance-container">
+                <img src="/public/assets/images/discord.svg" alt="email icon" style="width: 25px; padding-right: 10px;">
+                <p id="discord-1" style="min-width: 260px; letter-spacing: 0.3px;">* * * *</p>
+                <button onclick="showPInfo(['Tzagkaris#4044'], this, 'discord-1')" style="height: 30px; width: 55px; align-self: center; border:none; font-family: 'Open Sans'; border-radius: 5px; background-color: #D9D9D9; color: black;">Reveal</button>
+            </div>
+            <div class="info-instance-container">
+                <img src="/public/assets/images/github.svg" alt="git icon" style="width: 25px; padding-right: 10px;">
+                <p id="git-1" style="min-width: 300px; letter-spacing: 0.3px; text-align: end;"><a style="text-decoration: none;" href="https://github.com/stzagkarak">stzagkarak</a> , <a style="text-decoration: none;" href="https://github.com/tzagkaris">csd4279</a></p>
+            </div>
+
+        </div>
+
+        <section class="tskills">
+            <div class="section-header">
+                <h2 style="font-weight: 300; font-size: xx-large; letter-spacing: 0.7px; margin-bottom: 2px;">Technical Skills</h2>
+            </div>
+            <div class="clist-cont">
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> Experienced with development automation tools ( kubernates, ansible, podman, docker ) . </p>
+                </div>
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> Agile backend developer, experienced with many libraries and frameworks across widely used languages ( typescript, python, java ) . </p>
+                </div>
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> Experienced with agile "cloud native" project management, development and deployment . </p>
+                </div>
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> Familiar with the AWS ecosystem . </p>
+                </div>
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> Experienced linux user . </p>
+                </div>
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> "Can create a script that does X" . </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="twork">
+            <div class="section-header">
+                <h2 style="font-weight: 300; font-size: xx-large; letter-spacing: 0.7px; margin-bottom: 2px;">Work</h2>
+            </div>
+            <div class="clist-cont">
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> 
+                        Undergraduate Intern on the Human Computer Interaction Lab - <a style="text-decoration: none;" href="https://www.ics.forth.gr/hci/?lang=en">ICS-FORTH</a> . <br>
+                        [ August 2021 - Present ]  
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tedu">
+            <div class="section-header">
+                <h2 style="font-weight: 300; font-size: xx-large; letter-spacing: 0.7px; margin-bottom: 2px;">Education</h2>
+            </div>
+            <div class="clist-cont">
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> 
+                        Bachelor in Computer Science . <br>
+                        <a style="text-decoration: none;" href="https://www.csd.uoc.gr/CSD/index.jsp?lang=en">Computer Science Department - University of Crete</a> . <br>
+                        Current GPA: 8.6 / 10 . <br>
+                        [ September 2018 - Present ] <br> 
+                    </p>
+                </div>
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> 
+                        High School Degree . <br>
+                        High School of Vamos - Chania, Crete . <br>
+                        GPA: 19.1 / 20 . <br>
+                        [  September 2015 - June 2018 ] <br> 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tact">
+            <div class="section-header">
+                <h2 style="font-weight: 300; font-size: xx-large; letter-spacing: 0.7px; margin-bottom: 2px;">Activities & Honors</h2>
+            </div>
+            <div class="clist-cont">
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> 
+                        <b>2023</b> 
+                    </p>
+                </div>
+                <div class="clist-entry clist-subentry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> 
+                        "DEPROFOIT" distinction ( Academic assistant to undergraduate department courses ) . <br>
+                        [ Spring Semester 2023 ] 
+                    </p>
+                </div>
+                <div class="clist-entry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> 
+                        <b>2022</b> 
+                    </p>
+                </div>
+                <div class="clist-entry clist-subentry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> 
+                        Participation on the CSD Career Fair 2022 . 
+                    </p>
+                </div>
+                <div class="clist-entry clist-subentry">
+                    <img class="clist-entry-i" src="assets/images/arrow-top-right.svg" alt="list entry indicator">
+                    <p class="clist-entry-p" class="p-in"> 
+                        Student Volunteer host on HCI International . <br>
+                        [ 26 June - 1 July 2022 ]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="credits">
+            <p style="width: 100%; font-size: small; letter-spacing: 0.3px; text-align: end; font-weight: 300;">stzagkarak @ 16/02/2023</p>
+        </section>
+
+    </div>
+
+    
+</body>
+</html>
